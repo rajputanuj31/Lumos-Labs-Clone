@@ -1,0 +1,94 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-left: 90px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 2;
+}
+.text{
+    font-size: 1.4rem;
+    font-family: Brinnan-Bold,sans-serif;
+}
+.right{
+    flex: 1;
+}
+.background{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    z-index: 1;
+    right: 0;
+}
+.combtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.combtn>:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(-45deg,transparent 15px,#01c3f1 0,#2bf2ff);
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+    will-change: transform;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    text-decoration: none;
+    font-family: Brinnan-Bold,sans-serif;
+    font-weight: bold;
+}
+.combtn a span{
+    padding-left: 6px;
+    padding-right: 10px;
+}
+.combtn>:nth-child(2){
+    background: linear-gradient(45deg,transparent 15px,#5eead4 0,#2bf2ff);
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+    will-change: transform;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    text-decoration: none;
+    font-family: Brinnan-Bold,sans-serif;
+    font-weight: bold;
+}
+.combtn a:hover{
+    cursor: pointer;
+    transform:translate(-5px,-5px);
+    
+}
+
+@media (min-width: 580px) and (max-width:1080px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .right{
+        display: none;
+    }
+}
+@media (max-width: 580px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    .right{
+        display: none;
+    }
+}

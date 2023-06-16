@@ -1,0 +1,107 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #240e32;
+    padding-bottom: 3rem;
+}
+.f-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.f-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.f-logo img{
+    max-width: 100%;
+}
+.f-text{
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.icons a{
+    background-color: white;
+    padding: 5px 3px 1px 5px;
+    border-radius: 2px;
+    margin: 10px;
+    font-size: 20px;
+}
+.icons a:hover{
+    background-color: rgb(127, 245, 245);
+}
+.f-text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 400;
+}
+.f-text2 p{
+    color: gray;
+}
+.f-text2 p span{
+    color: white;
+    font-weight: bold;
+}
+.line{
+    width: 100%;
+    border-width: thin;
+    border: 0.01px solid rgb(110, 110, 110);
+}
+.last{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 5rem;
+}
+.last1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+}
+.last1 img{
+    width: 150px;
+    height: 45px;
+}
+.last2{
+    display: flex;
+    flex-direction: column;
+}
+.last2 a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.final-last{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.final-last p{
+    color: gray;
+}
+.final-last a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 227, 227);
+}
